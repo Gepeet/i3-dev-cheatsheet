@@ -138,6 +138,15 @@
    - emulator -avd [avd_name]
    - emulator @[avd_name]
 
+34. Control battery charging threshold
+    - installation - sudo dnf install tlp tlp-rdw
+    - configure threshold - sudo nvim /etc/tlp.conf
+    - change the following values depending on the threshold I want
+    START_CHARGE_THRESH_BAT0=90
+    STOP_CHARGE_THRESH_BAT0=90
+    - restart TLP to apply changes - sudo systemctl restart tlp
+    - check in terminal if changes are applied - sudo tlp-stat -b
+
 |||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||| Software shortcuts to open using terminal |||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -350,6 +359,9 @@
 ## Horizontal resizing window (From splits)
    - :horizontal resize 40
 
+## Closing splits
+    - select window to close
+    - :q
 
 ||||||||||||||||||||||||||||
 ||||||||| tmux |||||||||||||
@@ -448,6 +460,7 @@ customized "b" to "s"
   Left - ctrl + b + left arrow
   Up - ctrl + b + up arrow
   Down - ctrl + b + down arrow
+
 
 
 
