@@ -161,6 +161,7 @@
 ||||||||||||||||||||||||||||||||
 |||||||||  Docker ||||||||||||||
 ||||||||||||||||||||||||||||||||
+
 GENERAL COMMANDS
 1. Start the docker daemon
     - docker -d
@@ -168,6 +169,8 @@ GENERAL COMMANDS
     - docker --help
 3. Display system-wide information
     - docker info
+4. Open Docker Desktop
+    - systemctl --user enable docker-desktop
 
 IMAGES
 1. List local images
